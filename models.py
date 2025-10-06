@@ -38,7 +38,7 @@ class TableORM(Base):
     @staticmethod
     def get_all_tables():
 
-        ''' получения всех столов из бд'''
+        ''' получение всех столов из бд'''
 
         with session_maked() as sess:
             query = select(TableORM)
